@@ -14,7 +14,11 @@
     </head>
     <title>Visit Cities with Avinash Vengalasetti</title>
     <style>
-    
+      caption {
+          text-align: left;
+          caption-side: top;
+          position: relative;
+      }
   </style>
     <body>
        <h1>
@@ -43,5 +47,197 @@
       <p>
         The row with city names will break first because the class associated with it is col-md which is used for medium sized and larger screens. So when we reduce the size of the screen, the city names will not fit properly and hence will break. The letters are associated with the class col-sm-2 which is used for smaller screens, hence it fits properly. regenerate this   regenerate it regenerate this with new line
       </p>
-    </body>
-    </html>
+
+      <div class="container">
+        <img src="Atlanta.jpg" class="img-fluid" alt="Image of Atlanta" height="400" width="400">
+        <img src="Los angeles.jpg" class="img-fluid" alt="Image of Los angeles " height="400" width="400">
+        <img src="Nashville.jpg" class="img-fluid" alt="Image of NashVille" height="400" width="400">
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="thumbnail-container">
+        <img src="Atlanta.jpg" class="img-thumbnail" alt="Image of Atlanta" height="400" width="400">
+        <img src="Los angeles.jpg" class="img-thumbnail" alt="Image of Los angeles" height="400" width="400">
+        <img src="Nashville.jpg" class="img-thumbnail" alt="Image of NashVille" height="400" width="400">
+    </div>
+    <table class="table table-bordered table-striped table-hover table-sm">
+      <caption>Cities, Rivers and Trees</caption>
+      <thead class="table-dark">
+      <tr>
+        <th scope="col">Letter</th>
+        <th scope="col">City</th>
+        <th scope="col">River</th>
+        <th scope="col">Tree</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="table-info" scope="row">
+          <td>V</td>
+          <td>Venice</td>
+          <td>Van Duzen</td>
+          <td>Vacacia</td>
+        
+          <tr class="table-secondary" scope="row">
+              <td>E</td>
+              <td>Edinburgh</td>
+              <td>Edisto</td>
+              <td>Euodia</td>
+          </tr>
+          <tr class="table-info" scope="row">
+              <td>N</td>
+              <td>NashVille</td>
+              <td>Naknek</td>
+              <td>Nutmeg</td>
+          </tr>
+          <tr class="table-secondary" scope="row">
+              <td>G</td>
+              <td>Glasgow</td>
+              <td>Gila</td>
+              <td>Ginkgo</td>
+          </tr>
+          <tr class="table-info" scope="row">
+              <td>A</td>
+              <td>Atlanta</td>
+              <td>Abita</td>
+              <td>Achillea</td>
+          </tr>
+          <tr class="table-secondary" scope="row">
+              <td>L</td>
+              <td>Los angeles/td>
+              <td>Lafayette</td>
+              <td>Lilac</td>
+          </tr>
+      </tbody>
+  </table>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-sm">
+    <a class="navbar-brand" href="#">Button Groups</a>
+</nav>
+<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+    <div class="btn-group me-2" role="group" aria-label="Image buttons">
+        <button type="button" class="btn btn-success">V</button>
+        <button type="button" class="btn btn-success">E</button>
+        <button type="button" class="btn btn-success">N</button>
+    </div>
+    <div class="btn-group me-2" role="group" aria-label="Alert buttons">
+        <button type="button" class="btn btn-warning">G</button>
+        <button type="button" class="btn btn-warning">A</button>
+    </div>
+    <div class="btn-group" role="group" aria-label="Danger buttons">
+        <button type="button" class="btn btn-danger">L</button>
+    </div>
+</div>
+
+<br>
+<br>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-sm">
+    <a class="navbar-brand" href="#">Dropdown</a>
+</nav>
+<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+    <div class="btn-group" role="group">
+        <button type="button" class="btn btn-primary active dropdown-toggle" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            V
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">V</a></li>
+            <li><a class="dropdown-item" href="#">E</a></li>
+            <li><a class="dropdown-item" href="#">N</a></li>
+            <li><a class="dropdown-item" href="#">G</a></li>
+            <li><a class="dropdown-item" href="#">A</a></li>
+            <li><a class="dropdown-item" href="#">L</a></li>
+        </ul>
+    </div>
+    <button type="button" class="btn btn-primary">E</button>
+    <button type="button" class="btn btn-primary">N</button>
+    <button type="button" class="btn btn-primary">G</button>
+    <button type="button" class="btn btn-primary">A</button>
+    <button type="button" class="btn btn-primary">L</button>
+</div>
+
+<br>
+<br>
+
+<div class="btn-group" role="group">
+    <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Reference to Pages
+    </button>
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="basic.html">Basic Page</a></li>
+        <li><a class="dropdown-item" href="Advanced.html">Advanced Page</a></li>
+    </ul>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+<form>
+    <div class="form-group mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="form-group mb-3">
+        <label for="exampleInputPassword1" class="form-label">City</label>
+        <input type="text" class="form-control" id="userCity" placeholder="Enter your city">
+    </div>
+    <div class="form-check mb-3">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Sign up for newsletter?</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<br>
+<br>
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="Atlanta.jpg" class="card-img-top" alt="City 1 Image">
+                <div class="card-body">
+                    <h5 class="card-title">Atlanta</h5>
+                    <p class="card-text">Atlanta is the capital and largest city of the state of Georgia in the United States. It is a major cultural, economic, and transportation hub in the southeastern part of the country.Atlanta is a hub for higher education, with prestigious institutions like Emory University, Georgia Institute of Technology (Georgia Tech), and Morehouse College located within its borders.
+                    </p>
+                    <a href="Atlanta.html" class="btn btn-primary" target="_blank">View More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="Los angeles.jpg" class="card-img-top" alt="City 2 Image">
+                <div class="card-body">
+                    <h5 class="card-title">Los angeles</h5>
+                    <p class="card-text">Los Angeles, often abbreviated as L.A., is the largest city in California and the second-largest city in the United States, after New York City. It is known for its diverse population, cultural significance, and its association with the entertainment industry. L.A. enjoys a Mediterranean climate with mild, wet winters and hot, dry summers. This climate, along with its natural beauty, contributes to its appeal as a tourist destination.
+                    </p>
+                    <a href="Los angeles.html" class="btn btn-primary" target="_blank">View More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <img src="Nashville.jpg" class="card-img-top" alt="City 3 Image">
+                <div class="card-body">
+                    <h5 class="card-title">NashVille</h5>
+                    <p class="card-text">Nashville, often referred to as "Music City," is the capital of the U.S. state of Tennessee and is renowned for its rich musical heritage, especially in country music. However, Nashville is more than just a music hub; it boasts a vibrant cultural scene, a growing economy, and a welcoming community.Nashville is home to several prestigious universities and colleges, including Vanderbilt University and Belmont University. These institutions contribute to the city's intellectual and research-driven environment.
+                    </p>
+                    <a href="NashVille.html" class="btn btn-primary" target="_blank">View More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+
+
+       
